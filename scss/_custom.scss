@@ -169,7 +169,7 @@ body{
         border: 1px solid darken($gris, 10);
         margin-bottom: 1rem;
        
-        @include tablet(){
+        @include telefono(){
             flex: 0 1 calc(50% - 1rem);
         }
         
