@@ -55,7 +55,8 @@ body {
   align-items: center;
   background-image: url("../img/hero.jpg");
   background-repeat: no-repeat;
-  background-position: center center; }
+  background-position: center center;
+  padding: 15px; }
   .hero .contenido-hero {
     flex: 1; }
     .hero .contenido-hero h2 {
@@ -102,15 +103,20 @@ body {
         flex-direction: row; } }
     .barra .iconos .icono {
       flex: 1;
-      background-position: 5% center !important;
+      background-position: 2% center !important;
       background-size: 2.5rem;
-      text-align: center; }
-      @media only screen and (min-width: 768px) {
+      text-align: right;
+      padding-right: 5px; }
+      @media only screen and (min-width: 480px) {
         .barra .iconos .icono {
-          background-position: 20% center !important; } }
+          background-position: 20% center !important;
+          text-align: center;
+          padding-right: 5px; } }
       @media only screen and (min-width: 1024px) {
         .barra .iconos .icono {
-          background-position: left center !important; } }
+          background-position: 3% center !important;
+          text-align: center;
+          padding-right: 5px; } }
       .barra .iconos .icono.icono1 {
         background-image: url("../img/icono1.png");
         background-repeat: no-repeat;
@@ -127,13 +133,20 @@ body {
 .cursos {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; }
+  justify-content: center;
+  padding: 15px; }
+  @media only screen and (min-width: 480px) {
+    .cursos {
+      justify-content: space-between; } }
   .cursos .curso {
     flex: 0 1 calc(100% - 1rem);
     border: 1px solid rgba(200, 200, 200, 0.882353);
     margin-bottom: 1rem; }
     .cursos .curso .imagen-curso {
       width: 100%; }
+    @media only screen and (min-width: 480px) {
+      .cursos .curso {
+        flex: 0 1 calc(50% - 1rem); } }
     @media only screen and (min-width: 768px) {
       .cursos .curso {
         flex: 0 1 calc(33% - 1rem); } }
@@ -168,7 +181,7 @@ body {
 .footer {
   border: 1px solid rgba(200, 200, 200, 0.882353);
   margin-top: 1rem;
-  padding-top: 2rem; }
+  padding: 2rem 10px 0 10px; }
   .footer .contenedor-footer {
     display: flex;
     flex-direction: column; }
