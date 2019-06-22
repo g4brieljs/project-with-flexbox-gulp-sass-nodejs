@@ -62,6 +62,7 @@ body{
     display: flex;
     align-items: center;
     @include background-imagen('../img/hero.jpg');
+    padding: 15px;
 
     .contenido-hero{
         flex: 1;
@@ -125,15 +126,18 @@ body{
         .icono{
             flex: 1;
             background-position: 5% center!important;
-            @include tablet(){
+            background-size: 2.5rem;
+            text-align: right;
+            padding-right: 5px;
+            
+            @include telefono(){
                 background-position: 20% center!important;
+                text-align: center;
+                padding-right: 5px;
             }
             @include desktop{
                 background-position: left center!important;
             }
-            
-            background-size: 2.5rem;
-            text-align: center;
 
             &.icono1{
                 @include background-imagen('../img/icono1.png');
@@ -158,6 +162,7 @@ body{
     @include tablet(){
             justify-content: space-between;
         }
+    padding: 15px;
 
     .curso{
         .imagen-curso{
@@ -209,7 +214,7 @@ body{
 .footer{
     border: 1px solid darken($gris, 10);
     margin-top: 1rem;
-    padding-top: 2rem;
+    padding: 2rem 10px 0 10px;
 
     .contenedor-footer{
         display: flex;
